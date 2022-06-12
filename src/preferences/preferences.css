@@ -1,0 +1,24 @@
+.preferences{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+
+    flex-wrap: wrap;
+}
+
+.preference{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.preference__img img{
+    width: 40px;
+    height: 40px;
+}
+
+.preference__text{
+    font-size: 18px;
+    max-width: 130px;
+    margin-left: 10px;
+}

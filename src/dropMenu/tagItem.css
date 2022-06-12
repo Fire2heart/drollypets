@@ -1,0 +1,9 @@
+.tag__item{
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.selected{
+    font-weight: 800;
+}
