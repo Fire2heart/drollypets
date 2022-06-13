@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./header/Header";
 import Product from "./Product/Product";
 import Preferences from "./preferences/Preferences";
+import MySlider from "./slider/MySlider";
 
 function App() {
 	const products = [
@@ -69,10 +70,11 @@ function App() {
 	];
 
 	const [search, setSearch] = React.useState("");
+	const [items, setItems] = React.useState(products);
 	const [dropMenu, setDropMenu] = React.useState(false);
 
 	return (
-		<div style={{overflow: 'hidden'}} className="App">
+		<div className="App">
 			<Header
 				search={search}
 				setSearch={setSearch}
@@ -80,8 +82,14 @@ function App() {
 				setDropMenu={setDropMenu}
 			/>
 			<div className="container">
+				<MySlider />
 				<Preferences />
-				<Product products={products}/>
+				<Product 
+					items={items.filter((item) =>
+						item.name.toLowerCase().includes(search.toLowerCase())
+					)}
+					setItems={setItems}
+				/>
 			</div>
 			<footer>
 				This is a footer

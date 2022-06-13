@@ -41,11 +41,13 @@ function Header({ search, setSearch, dropMenu, setDropMenu }) {
             <li
               className="nav__item arrow"
               onMouseEnter={() => {
-                setDropMenu(!dropMenu);
+                setDropMenu(true);
                 // e.currentTarget.classList.toggle("arrow__reverse");
               }}
+              onMouseLeave={() => setDropMenu(false)}
             >
               <GiShoppingBag />
+              <DropMenu dropMenu={dropMenu} setDropMenu={setDropMenu} />
               Shop
             </li>
             <li className="nav__item">Brands</li>
@@ -58,7 +60,6 @@ function Header({ search, setSearch, dropMenu, setDropMenu }) {
           </ul>
         </div>
       </header>
-      <DropMenu dropMenu={dropMenu} setDropMenu={setDropMenu} />
     </>
 	);
 }

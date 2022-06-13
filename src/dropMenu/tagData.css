@@ -1,5 +1,10 @@
 .data__item{
     font-size: 20px;
     margin: 10px 0;
+    width: 200px;
     font-weight: 300;
+}
+
+.data__item:hover{
+    font-weight: 600;
 }

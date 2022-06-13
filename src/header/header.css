@@ -8,6 +8,10 @@
     width: 100%;
 }
 
+.logo{
+    cursor: pointer;
+}
+
 .info{
     display: flex;
     justify-content: space-between;
@@ -17,6 +21,9 @@
 .name{
     font-size: 26px;
     font-weight: 800;
+
+    user-select: none;
+    cursor: pointer;
 }
 
 .panels{
@@ -27,6 +34,7 @@
 
 .panels > svg{
     margin-right: 1rem;
+    cursor: pointer;
 
     transition: all .3s;
 }
@@ -45,6 +53,12 @@
     display: flex;
     align-items: center;
     margin-top: 1rem;
+
+    user-select: none;
+}
+
+.nav > li:hover{
+    color: white;
 }
 
 .nav__item{
@@ -53,12 +67,9 @@
     display: flex;
     align-items: center;
     font-weight: 500;
+    cursor: pointer;
 
     transition: all .3s;
-}
-
-.nav__item:hover{
-    color: white;
 }
 
 .nav__item svg{
@@ -67,6 +78,9 @@
 
 .sign-in{
     transition: all .3s;
+    cursor: pointer;
+
+    user-select: none;
 }
 
 .sign-in:hover{
@@ -80,6 +94,7 @@
     border-radius: 10px;
     position: absolute;
     right: 0;
+    cursor: pointer;
 
     transition: all .3s;
 }

@@ -2,10 +2,10 @@ import React from "react";
 import "./product.css";
 import Rating from "./Rating";
 
-function Product({ products }) {
+function Product({ items }) {
 	return (
 		<section className="products">
-			{products.map((product) => (
+			{items.map((product) => (
         <div key={product.id} className="product">
           <div className="product__img">
             <img src={product.img} alt="#" />

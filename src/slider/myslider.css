@@ -1,0 +1,17 @@
+.mySlider{
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.mySlider__item img{
+    height: 250px;
+    margin: 0 auto;
+}
+
+.slick-arrow{
+    color: black;
+}
+
+.slick-arrow:hover{
+    color: black;
+}
